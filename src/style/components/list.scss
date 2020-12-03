@@ -52,6 +52,20 @@ $line-height-zh: 1.5 !default; // 中文多行
   align-items: center;
   @include active;
 
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: auto;
+    left: $spacing-h-lg;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.5);
+    transform-origin: center;
+    border-bottom: 1px solid $color-border;
+    pointer-events: none;
+  }
+
   &--thumb {
     .row-thumb {
       margin-right: 24px;
@@ -81,20 +95,6 @@ $line-height-zh: 1.5 !default; // 中文多行
   &-extra {
     max-width: 235px;
     text-align: right;
-  }
-
-  &::after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: auto;
-    left: $spacing-h-lg;
-    right: 0;
-    bottom: 0;
-    transform: scaleY(0.5);
-    transform-origin: center;
-    border-bottom: 1px solid $color-border;
-    pointer-events: none;
   }
 
   .row-content {

@@ -28,6 +28,24 @@
 .ui-list-row:active {
   background-color: #F0F0F0;
 }
+.ui-list-row::after {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: auto;
+  left: 24rpx;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  border-bottom: 1rpx solid #D6E4EF;
+  pointer-events: none;
+}
 .ui-list-row--thumb .row-thumb {
   margin-right: 24rpx;
   width: 56rpx;
@@ -57,24 +75,6 @@
 .ui-list-row-extra {
   max-width: 235rpx;
   text-align: right;
-}
-.ui-list-row::after {
-  content: '';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  top: auto;
-  left: 24rpx;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: scaleY(0.5);
-      -ms-transform: scaleY(0.5);
-          transform: scaleY(0.5);
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  border-bottom: 1rpx solid #D6E4EF;
-  pointer-events: none;
 }
 .ui-list-row .row-content__info-title {
   overflow: hidden;
