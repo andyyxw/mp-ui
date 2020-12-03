@@ -198,25 +198,25 @@ function ListRow(_ref) {
     className: rootClass,
     onClick: handleClick
   }, thumb && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "ui-list-row-thumb item-thumb"
+    className: "ui-list-row-thumb row-thumb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* Image */ "a"], {
-    className: "item-thumb__info",
+    className: "row-thumb__info",
     mode: "scaleToFill",
     src: thumb
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "ui-list-row-content item-content"
+    className: "ui-list-row-content row-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-content__info"
+    className: "row-content__info"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-content__info-title"
+    className: "row-content__info-title"
   }, propsTitle), note && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-content__info-note"
+    className: "row-content__info-note"
   }, note))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "ui-list-row-extra item-extra"
+    className: "ui-list-row-extra row-extra"
   }, propsExtraText && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-extra__info"
+    className: "row-extra__info"
   }, propsExtraText), isSwitch && !propsExtraText && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-extra__switch",
+    className: "row-extra__switch",
     onClick: handleSwitchClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* Switch */ "b"], {
     color: switchColor,
@@ -224,9 +224,9 @@ function ListRow(_ref) {
     checked: checked,
     onChange: handleSwitchChange
   })), arrow && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* View */ "d"], {
-    className: "item-extra__icon"
+    className: "row-extra__icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_1__[/* Text */ "c"], {
-    className: "at-icon item-extra__icon-arrow at-icon-chevron-".concat(arrow)
+    className: "at-icon row-extra__icon-arrow at-icon-chevron-".concat(arrow)
   }))));
 }
 

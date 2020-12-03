@@ -62,24 +62,24 @@ export default function ListRow ({
   return (
     <View className={rootClass} onClick={handleClick}>
       {thumb && (
-        <View className='ui-list-row-thumb item-thumb'>
+        <View className='ui-list-row-thumb row-thumb'>
           <Image
-            className='item-thumb__info'
+            className='row-thumb__info'
             mode='scaleToFill'
             src={thumb}
           />
         </View>
       )}
-      <View className='ui-list-row-content item-content'>
-        <View className='item-content__info'>
-          <View className='item-content__info-title'>{propsTitle}</View>
-          {note && <View className='item-content__info-note'>{note}</View>}
+      <View className='ui-list-row-content row-content'>
+        <View className='row-content__info'>
+          <View className='row-content__info-title'>{propsTitle}</View>
+          {note && <View className='row-content__info-note'>{note}</View>}
         </View>
       </View>
-      <View className='ui-list-row-extra item-extra'>
-        {propsExtraText && <View className='item-extra__info'>{propsExtraText}</View>}
+      <View className='ui-list-row-extra row-extra'>
+        {propsExtraText && <View className='row-extra__info'>{propsExtraText}</View>}
         {isSwitch && !propsExtraText && (
-          <View className='item-extra__switch' onClick={handleSwitchClick}>
+          <View className='row-extra__switch' onClick={handleSwitchClick}>
             <Switch
               color={switchColor}
               disabled={disabled}
@@ -89,9 +89,9 @@ export default function ListRow ({
           </View>
         )}
         {arrow && (
-          <View className='item-extra__icon'>
+          <View className='row-extra__icon'>
             <Text
-              className={`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`}
+              className={`at-icon row-extra__icon-arrow at-icon-chevron-${arrow}`}
             />
           </View>
         )}

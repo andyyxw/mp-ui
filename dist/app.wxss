@@ -28,12 +28,12 @@
 .ui-list-row:active {
   background-color: #F0F0F0;
 }
-.ui-list-row--thumb .item-thumb {
+.ui-list-row--thumb .row-thumb {
   margin-right: 24rpx;
   width: 56rpx;
   height: 56rpx;
 }
-.ui-list-row--thumb .item-thumb__info {
+.ui-list-row--thumb .row-thumb__info {
   width: 100%;
   height: 100%;
 }
@@ -76,7 +76,7 @@
   border-bottom: 1rpx solid #D6E4EF;
   pointer-events: none;
 }
-.ui-list-row .item-content__info-title {
+.ui-list-row .row-content__info-title {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -85,18 +85,18 @@
   font-size: inherit;
   line-height: 1.5;
 }
-.ui-list-row .item-content__info-note {
+.ui-list-row .row-content__info-note {
   color: #999;
   font-size: 28rpx;
   line-height: 1.5;
 }
-.ui-list-row .item-extra {
+.ui-list-row .row-extra {
   position: relative;
 }
-.ui-list-row .item-extra__info, .ui-list-row .item-extra__icon, .ui-list-row .item-extra__switch {
+.ui-list-row .row-extra__info, .ui-list-row .row-extra__icon, .ui-list-row .row-extra__switch {
   display: inline-block;
 }
-.ui-list-row .item-extra__info {
+.ui-list-row .row-extra__info {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -109,7 +109,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.ui-list-row .item-extra__icon {
+.ui-list-row .row-extra__icon {
   right: -12rpx;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -117,11 +117,11 @@
           transform: translateY(-50%);
   position: absolute;
 }
-.ui-list-row .item-extra__icon-arrow {
+.ui-list-row .row-extra__icon-arrow {
   color: #CCC;
   font-size: 48rpx;
 }
-.ui-list-row .item-extra__switch {
+.ui-list-row .row-extra__switch {
   vertical-align: middle;
 }
 @font-face {

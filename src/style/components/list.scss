@@ -53,7 +53,7 @@ $line-height-zh: 1.5 !default; // 中文多行
   @include active;
 
   &--thumb {
-    .item-thumb {
+    .row-thumb {
       margin-right: 24px;
       @include squareImg($ui-list-thumb-size);
     }
@@ -97,7 +97,7 @@ $line-height-zh: 1.5 !default; // 中文多行
     pointer-events: none;
   }
 
-  .item-content {
+  .row-content {
     &__info {
       &-title {
         @include ellipsis;
@@ -115,7 +115,7 @@ $line-height-zh: 1.5 !default; // 中文多行
     }
   }
 
-  .item-extra {
+  .row-extra {
     position: relative;
 
     &__info,
